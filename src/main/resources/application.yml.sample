@@ -1,0 +1,8 @@
+
+spring:
+  // DBに接続するための記述
+  datasource:
+    url:
+    username:
+    password:
+    driver-class-name:
