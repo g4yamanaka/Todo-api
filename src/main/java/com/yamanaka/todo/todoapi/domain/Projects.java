@@ -25,7 +25,7 @@ public class Projects {
     private String project_name;
 
     /** ProjectsとTasksは1対多の関係 */
-    @OneToMany(mappedBy = "tasks")
+    @OneToMany(mappedBy = "projects")
     private List<Tasks> tasks;
 
     /** ProjectsとTabsは多対1の関係 */

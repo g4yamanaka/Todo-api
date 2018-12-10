@@ -8,6 +8,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import java.sql.Timestamp;
 
 @Entity
@@ -32,4 +33,5 @@ public class Tasks {
     /** TasksとProjectsは多対1の関係 */
     @ManyToOne
     private Projects projects;
+
 }

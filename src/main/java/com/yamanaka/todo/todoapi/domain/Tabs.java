@@ -29,6 +29,6 @@ public class Tabs {
     private Users users;
 
     /** TabsとProjectsは1対多の関係 */
-    @OneToMany(mappedBy = "projects")
+    @OneToMany(mappedBy = "tabs")
     private List<Projects> projects;
 }
