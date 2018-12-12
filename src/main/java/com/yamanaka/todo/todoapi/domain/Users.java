@@ -1,5 +1,6 @@
 package com.yamanaka.todo.todoapi.domain;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -25,5 +26,7 @@ public class Users {
 
     /** UsersとTabsは1対多の関係 */
     @OneToMany(mappedBy = "users")
+    @JsonManagedReference
     private List<Tabs> tabs;
+
 }
